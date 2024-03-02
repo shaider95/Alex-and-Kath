@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex-and-Kath</title>
+    <style>
+        #content {
+            display: none; /* Initially hide the content */
+        }
+    </style>
+     <script>
+        // Define the correct password
+        const correctPassword = "123123";
+
+        // Function to prompt for password
+        function promptForPassword() {
+            // Use prompt to ask for the password
+            const password = prompt("Enter the password:");
+
+            // Check if the entered password is correct
+            if (password === correctPassword) {
+                // Password is correct, display the page content
+                document.getElementById("content").style.display = "block";
+            } else {
+                // Password is incorrect, show an alert
+                alert("Incorrect password. Please try again.");
+                // Prompt for password again
+                promptForPassword();
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="/html/stylesheet.css">
+</head>
+<body onload="promptForPassword()">
+    <header>
+        <h1>ALEX and KATH</h1>
+        <nav>
+            <ul>
+            </ul>
+            <br/>
+            <br/>
+        </nav>
+    </header>
+    
+    <div id="content" style="display: none;">
+    <main>
+        <section id="home">
+            <h2>My Lover</h2>
+            <p>For I am blessed<br/>
+                Determined to give my best<br/>
+                You need no guess<br/>
+                Love for you is the purest<br/>
+                <br/>
+                Our moments, tested by time<br/>
+                In all universes I plan to make you mine<br/>
+                Endearment and passion of mine, only offered to thine<br/>
+                Our reputation surely will age like wine<br/>
+                <br/>
+                As sun shines every morning,<br/>
+                Though mishaps keep on pouring,<br/>
+                Hardships through the evening<br/>
+                Like the eternal flame, our affection will keep on burning<br/>
+                <br/>
+                Countless midnight, alone and in sorrow<br/>
+                I cannot fathom the pain each time you go<br/>
+                Hoping that someday, or even tomorrow<br/>
+                I'll have to witness the beauty of you<br/>
+                <br/>
+                A woman so brave, strong, and bold<br/>
+                Yet enclosed in a room of solitude<br/>
+                I wrote and offer you this simple ode<br/>
+                For our story will be tailored in fortitude<br/>
+                <br/>
+                Time has come, our love be told like lore<br/>
+                ‘Fearless I am to ask you now for more,<br/>
+                ‘Tis the moment that I prayed for<br/>
+                Would you be with me until forevermore?</p>
+        </section>
+    </main>
+    
+    <!-- Button to transition to another page -->
+    <main>
+        <button id="transitionButton">I Love You</button>
+    </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Alex-and-Kath. All rights reserved.</p>
+    </footer>
+
+    <!-- Include JavaScript file -->
+    <script src="/html/javascript.js"></script>
+
+</body>
+</html>

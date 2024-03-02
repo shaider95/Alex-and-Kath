@@ -1,0 +1,80 @@
+@keyframes sparkleColorChangeH1 {
+    0% {
+        opacity: 1;
+        text-shadow: none;
+        color: red;
+    }
+    50% {
+        opacity: 0.5;
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+        color: rgb(86, 51, 102);
+    }
+    100% {
+        opacity: 1;
+        text-shadow: none;
+        color: rgb(16, 98, 156);
+    }
+}
+@keyframes sparkleColorChangeH2 {
+    0% {
+        opacity: 1;
+        text-shadow: none;
+        color: rgb(242, 213, 69);
+    }
+    50% {
+        opacity: 0.5;
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+        color: rgb(231, 103, 43);
+    }
+    100% {
+        opacity: 1;
+        text-shadow: none;
+        color: rgb(14, 203, 153);
+    }
+}
+.sparkle-color-change-h1 {
+    animation: sparkleColorChangeH1 3s ease-in-out infinite;
+}
+.sparkle-color-change-h2 {
+    animation: sparkleColorChangeH2 3s ease-in-out infinite;
+}
+body {
+    background-image: url('/html/image4.jpg'); /* Replace 'background-image.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    font-family: "Cooper Black", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-repeat: no-repeat; /* Do not repeat the background image */
+}
+
+h1 {
+    font-family: "Kunstler Script", Arial, sans-serif;
+    font-size: 130px;
+    text-align: center;
+}
+h2 {
+    font-family: "Kunstler Script", Arial, sans-serif;
+    font-size: 150px;
+    text-align: center;
+}
+#goBackButton {
+    position: fixed; /* Make the button fixed */
+    background-color: rgb(110, 110, 198); /* Change to the desired color */
+    color: rgb(255, 255, 255); /* Text color */
+    font-family: "Cooper Black";
+    font-size: 12px; /* Adjust font size */
+    bottom: 1%; /* Adjust the distance from the bottom */
+    
+    z-index: 999; /* Ensure the button stays on top of other content */
+}
+
+
+
+
+
+footer {
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}

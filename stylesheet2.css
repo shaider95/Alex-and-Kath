@@ -1,0 +1,94 @@
+@keyframes sparkleColorChange {
+    0% {
+        opacity: 1;
+        text-shadow: none;
+        color: red;
+    }
+    50% {
+        opacity: 0.5;
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+        color: rgb(188, 19, 200);
+    }
+    100% {
+        opacity: 1;
+        text-shadow: none;
+        color: rgb(14, 162, 203);
+    }
+}
+
+.sparkle-color-change {
+    animation: sparkleColorChange 3s ease-in-out infinite;
+}
+
+body {
+    background-image: url('/html/image2.jpg'); /* Replace 'background-image.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    font-family: "Cooper Black", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-repeat: no-repeat; /* Do not repeat the background image */
+}
+
+h1 {
+    font-family: "Cooper Black", Arial, sans-serif;
+    font-size: 200px;
+    text-align: center;
+}
+
+#yesButton,
+#noButton {
+    position: absolute; /* Make the buttons fixed */
+    background-color: rgb(230, 153, 87); /* Change to the desired color */
+    color: rgb(0, 0, 0); /* Text color */
+    font-family: "Cooper Black";
+    font-size: 50px; /* Adjust font size */
+    bottom: 5px; /* Adjust the distance from the bottom */
+    z-index: 999; /* Ensure the buttons stay on top of other content */
+}
+
+#yesButton {
+    left: 25%; /* Adjust the position of the 'YES' button */
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+#noButton {
+    right: 25%; /* Adjust the position of the 'NO' button */
+    transform: translateX(50%); /* Center horizontally */
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 9999;
+}
+
+.text-box {
+    width: 30%; /* Adjust width based on content */
+    max-width: 70%; /* Set maximum width to prevent overflow */
+    font-size: 50px; /* Adjust font size */
+    font-family: Arial, sans-serif; /* Set font family to Arial */
+    border-radius: 10px;
+    border: 2px solid #000; /* Set solid border */
+    padding: 20px; /* Increase padding for better appearance */
+    margin: 0 auto; /* Center horizontally */
+    text-align: center; /* Center text horizontally */
+    background-color: #fff; /* Set white background color */
+    display: none; /* Hide the text box initially */
+}
+
+
+
+
+
+
+footer {
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+}

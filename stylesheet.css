@@ -1,0 +1,64 @@
+/* stylesheet.css */
+
+/* Set background color to a light lavender */
+/* stylesheet.css */
+
+/* Set background image */
+body {
+    background-image: url('/html/lavender.jpg'); /* Replace 'background-image.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    font-family: "Cooper Black", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+     
+        transition: opacity 0.5s ease-in-out; /* Adjust the duration and timing function as needed */
+    
+    
+}
+h1 {
+    font-family: "Cooper Black", Arial, sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+h2 {
+    font-family: "Old English Text MT", Arial, sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+
+p {
+    font-family: "Vivaldi", Arial, sans-serif; /* Set font family for p */
+    font-size: 30px; /* Set font size for p */
+    font-weight: bold; /* Set font weight to bold */
+    text-align: center;
+}
+
+/* Styles for the button */
+#transitionButton {
+    position: Sticky; /* Make the button fixed */
+    background-color: rgb(199, 38, 148); /* Change to the desired color */
+    color: rgb(0, 0, 0); /* Text color */
+    font-family: "Cooper Black";
+    font-size: 16px; /* Adjust font size */
+    bottom: 20px; /* Adjust the distance from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    z-index: 999; /* Ensure the button stays on top of other content */
+}
+
+
+
+
+/* Set footer background color to pink */
+footer {
+    p{
+        font-family: "Arial", Arial, sans-serif;
+        font-size: 10px;
+    }
+    
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+}
